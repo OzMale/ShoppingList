@@ -7,12 +7,16 @@ import {AngularFireModule} from 'angularfire2';
 import {MyApp} from './app.component';
 import {ShoppingListPage} from '../pages/shopping-list/shopping-list';
 import {AddShoppingPage} from '../pages/add-shopping/add-shopping';
+import {EditShoppingItemPage} from '../pages/edit-shopping-item/edit-shopping-item';
 import {FIREBASE_CREDENTIALS} from './firebase.credentials';
 import {AngularFireDatabaseModule} from 'angularfire2/database-deprecated';
 
 @NgModule({
   declarations: [
-    MyApp, ShoppingListPage, AddShoppingPage
+    MyApp,
+    ShoppingListPage,
+    AddShoppingPage,
+    EditShoppingItemPage
   ],
   imports: [
     BrowserModule, IonicModule.forRoot(MyApp),
@@ -24,7 +28,10 @@ import {AngularFireDatabaseModule} from 'angularfire2/database-deprecated';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp, ShoppingListPage, AddShoppingPage
+    MyApp,
+    ShoppingListPage,
+    AddShoppingPage,
+    EditShoppingItemPage
   ],
   providers: [
     StatusBar,

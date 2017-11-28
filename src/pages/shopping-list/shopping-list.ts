@@ -4,6 +4,7 @@ import {AddShoppingPage} from '../add-shopping/add-shopping';
 import {AngularFireDatabase, FirebaseListObservable} from 'angularfire2/database-deprecated';
 import {ShoppingItem} from '../../models/shopping-item/shopping-item.interface';
 import { COMPILER_OPTIONS } from '@angular/core/src/linker/compiler';
+import {EditShoppingItemPage} from '../edit-shopping-item/edit-shopping-item';
 
 @Component({
   selector: 'page-shopping-list',
@@ -42,6 +43,7 @@ selectShoppingItem(shoppingItem: ShoppingItem){
         handler: () => {
           // Send the user to the EditShoppingItemPage and
           // pass the key as a parameter
+          this.navCtrl.push(EditShoppingItemPage, {shoppingItemId: shoppingItem.$key});
         }
       },
       {

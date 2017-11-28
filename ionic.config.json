@@ -1,6 +1,6 @@
 {
   "name": "ilost",
-  "app_id": "",
+  "app_id": "406cb71b",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
