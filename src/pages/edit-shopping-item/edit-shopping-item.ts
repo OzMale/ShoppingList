@@ -3,8 +3,6 @@ import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {AngularFireDatabase, FirebaseObjectObservable} from 'angularfire2/database-deprecated';
 import {ShoppingItem} from '../../models/shopping-item/shopping-item.interface';
 
-import {} from '../../models/shopping-item/shopping-item.interface';
-
 @Component({selector: 'page-edit-shopping-item', templateUrl: 'edit-shopping-item.html'})
 export class EditShoppingItemPage {
 
